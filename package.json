@@ -1,5 +1,6 @@
 {
   "name": "battlechat",
+  "node":"0.10.17",
   "version": "0.0.0",
   "description": "ERROR: No README data found!",
   "main": "server.js",
@@ -10,6 +11,11 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/developers-of-athens/battlechat.git"
+  },
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*",
+    "jade": "*"
   },
   "author": "",
   "license": "BSD-2-Clause",
