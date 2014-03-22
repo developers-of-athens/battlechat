@@ -64,8 +64,19 @@ io.sockets.on('connection', function (socket) { // First connection
     }
   });
   socket.on('setTitle', function (data) {
-    if 
-  }
+    if (titleArray.indexOf(data) == -1)
+    {
+      socket.set('test', data, function(){
+        titleArray.push(data);
+        socket.emit('titleStatus', 'ok');
+        console.log("Title set to " + data);
+      });
+    }
+    else
+    {
+      socket.emit('titleStatus', 'error')
+    }
+  });
   socket.on('disconnect', function () { // Disconnection of the client
     users -= 1;
     reloadUsers();
