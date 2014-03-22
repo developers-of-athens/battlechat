@@ -5,8 +5,6 @@ var appPort = 16558;
 // Librairies
 
 var express = require('express'), app = express();
-
-var logfmt = require("logfmt");
 var http = require('http')
   , server = http.createServer(app)
   , io = require('socket.io').listen(server);
