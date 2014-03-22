@@ -1,3 +1,4 @@
+var jade = require('jade');
 var express = require('express'), app = express.createServer();
 
 app.set('views', __dirname + '/views');
