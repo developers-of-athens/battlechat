@@ -94,28 +94,16 @@ function setPseudo() {
         $('#modalPseudo').modal('hide');
         $("#alertPseudo").hide();
         pseudo = $("#pseudoInput").val();
+        if ($("#titleInput").val() != "")
+        {
+          title = $('#titleInput').val();
+        }
       }
       else
       {
         $("#alertPseudo").slideDown();
       }
-    })
-  }
-  if ($("#titleInput").val() != "")
-    console.log($("#titleInput").val());
-  {
-    socket.emit('setTitle', $('#titleInput').val());
-    socket.on('titleStatus', function(data){
-      if(data == "ok")
-      {
-        $('#modalTitle').modal('hide');
-        $('#alertTitle').hide();
-        title = $('#titleInput').val();
-      }
-      else
-      {
-        $('#alertTitle').slideDown();
-      }
+      $('#title').text(title);
     })
   }
 }
