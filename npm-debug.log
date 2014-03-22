@@ -1,0 +1,404 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.26/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'socket' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'socket', null ]
+5 verbose cache add name=undefined spec="socket" args=["socket",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'socket',
+6 verbose parsed url   path: 'socket',
+6 verbose parsed url   href: 'socket' }
+7 silly lockFile 897d2105-socket socket
+8 verbose lock socket /Users/shipyard/.npm/897d2105-socket.lock
+9 silly lockFile 897d2105-socket socket
+10 silly lockFile 897d2105-socket socket
+11 verbose addNamed [ 'socket', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 45707214-socket socket@
+14 verbose lock socket@ /Users/shipyard/.npm/45707214-socket.lock
+15 silly addNameRange { name: 'socket', range: '*', hasData: false }
+16 verbose url raw socket
+17 verbose url resolving [ 'https://registry.npmjs.org/', './socket' ]
+18 verbose url resolved https://registry.npmjs.org/socket
+19 info trying registry request attempt 1 at 21:20:40
+20 http GET https://registry.npmjs.org/socket
+21 http 200 https://registry.npmjs.org/socket
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Sat, 22 Mar 2014 01:20:40 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+22 silly registry.get     etag: '"43Y09343QNCNO1WCBYK7RCFDF"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     'cache-control': 'max-age=1',
+22 silly registry.get     'content-length': '1451',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-v36-ASH, cache-jfk1033-JFK',
+22 silly registry.get     'x-cache': 'MISS, MISS',
+22 silly registry.get     'x-cache-hits': '0, 0',
+22 silly registry.get     'x-timer': 'S1395451240.865634203,VS0,VS-111,VE-26,VE92',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'socket', range: '*', hasData: true }
+24 silly addNameRange versions [ 'socket', [ '0.0.1' ] ]
+25 verbose addNamed [ 'socket', '0.0.1' ]
+26 verbose addNamed [ '0.0.1', '0.0.1' ]
+27 silly lockFile ccbb8590-socket-0-0-1 socket@0.0.1
+28 verbose lock socket@0.0.1 /Users/shipyard/.npm/ccbb8590-socket-0-0-1.lock
+29 silly lockFile 22226b48-pmjs-org-socket-socket-0-0-1-tgz https://registry.npmjs.org/socket/-/socket-0.0.1.tgz
+30 verbose lock https://registry.npmjs.org/socket/-/socket-0.0.1.tgz /Users/shipyard/.npm/22226b48-pmjs-org-socket-socket-0-0-1-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket/-/socket-0.0.1.tgz',
+31 verbose addRemoteTarball   '29ac6549f15a65b19f3444a4178d537a8c161a8b' ]
+32 info retry fetch attempt 1 at 21:20:41
+33 verbose fetch to= /var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/tmp.tgz
+34 http GET https://registry.npmjs.org/socket/-/socket-0.0.1.tgz
+35 http 200 https://registry.npmjs.org/socket/-/socket-0.0.1.tgz
+36 verbose tar unpack /var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/tmp.tgz
+37 silly lockFile 6be5b318-1754-0-47126140259206295-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/package
+38 verbose lock tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/package /Users/shipyard/.npm/6be5b318-1754-0-47126140259206295-package.lock
+39 silly lockFile 0f4bf0a0-1754-0-47126140259206295-tmp-tgz tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/tmp.tgz
+40 verbose lock tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/tmp.tgz /Users/shipyard/.npm/0f4bf0a0-1754-0-47126140259206295-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry examples/
+43 silly gunzTarPerm extractEntry examples/echo-server.js
+44 silly gunzTarPerm extractEntry examples/simple-test.js
+45 silly gunzTarPerm extractEntry examples/simple-time-server.js
+46 silly gunzTarPerm extractEntry index.js
+47 silly gunzTarPerm extractEntry lib/
+48 silly gunzTarPerm extractEntry lib/index.js
+49 silly gunzTarPerm extractEntry lib/middleware/
+50 silly gunzTarPerm extractEntry lib/middleware/echo.js
+51 silly gunzTarPerm extractEntry lib/middleware/errorHandler.js
+52 silly gunzTarPerm extractEntry lib/middleware/json.js
+53 silly gunzTarPerm extractEntry lib/middleware/profiler.js
+54 silly gunzTarPerm extractEntry lib/proto.js
+55 silly gunzTarPerm extractEntry lib/utils.js
+56 silly gunzTarPerm extractEntry nbproject/
+57 silly gunzTarPerm extractEntry nbproject/private/
+58 silly gunzTarPerm extractEntry nbproject/private/private.properties
+59 silly gunzTarPerm extractEntry nbproject/project.properties
+60 silly gunzTarPerm extractEntry nbproject/project.xml
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry scripts/
+63 silly gunzTarPerm extractEntry scripts/lint
+64 silly lockFile 6be5b318-1754-0-47126140259206295-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/package
+65 silly lockFile 6be5b318-1754-0-47126140259206295-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/package
+66 silly lockFile 0f4bf0a0-1754-0-47126140259206295-tmp-tgz tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/tmp.tgz
+67 silly lockFile 0f4bf0a0-1754-0-47126140259206295-tmp-tgz tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/tmp.tgz
+68 verbose tar pack [ '/Users/shipyard/.npm/socket/0.0.1/package.tgz',
+68 verbose tar pack   '/var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/package' ]
+69 verbose tarball /Users/shipyard/.npm/socket/0.0.1/package.tgz
+70 verbose folder /var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/package
+71 silly lockFile 6be5b318-1754-0-47126140259206295-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/package
+72 verbose lock tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/package /Users/shipyard/.npm/6be5b318-1754-0-47126140259206295-package.lock
+73 silly lockFile 6c63e935-ard-npm-socket-0-0-1-package-tgz tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz
+74 verbose lock tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz /Users/shipyard/.npm/6c63e935-ard-npm-socket-0-0-1-package-tgz.lock
+75 silly lockFile 6be5b318-1754-0-47126140259206295-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/package
+76 silly lockFile 6be5b318-1754-0-47126140259206295-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451241754-0.47126140259206295/package
+77 silly lockFile 6c63e935-ard-npm-socket-0-0-1-package-tgz tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz
+78 silly lockFile 6c63e935-ard-npm-socket-0-0-1-package-tgz tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz
+79 silly lockFile a21beaaa-hipyard-npm-socket-0-0-1-package /Users/shipyard/.npm/socket/0.0.1/package
+80 verbose lock /Users/shipyard/.npm/socket/0.0.1/package /Users/shipyard/.npm/a21beaaa-hipyard-npm-socket-0-0-1-package.lock
+81 silly lockFile a21beaaa-hipyard-npm-socket-0-0-1-package /Users/shipyard/.npm/socket/0.0.1/package
+82 silly lockFile a21beaaa-hipyard-npm-socket-0-0-1-package /Users/shipyard/.npm/socket/0.0.1/package
+83 verbose tar unpack /Users/shipyard/.npm/socket/0.0.1/package.tgz
+84 silly lockFile 2b87352f-hipyard-npm-socket-0-0-1-package tar:///Users/shipyard/.npm/socket/0.0.1/package
+85 verbose lock tar:///Users/shipyard/.npm/socket/0.0.1/package /Users/shipyard/.npm/2b87352f-hipyard-npm-socket-0-0-1-package.lock
+86 silly lockFile 6c63e935-ard-npm-socket-0-0-1-package-tgz tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz
+87 verbose lock tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz /Users/shipyard/.npm/6c63e935-ard-npm-socket-0-0-1-package-tgz.lock
+88 silly gunzTarPerm modes [ '755', '644' ]
+89 silly gunzTarPerm extractEntry package.json
+90 silly gunzTarPerm extractEntry index.js
+91 silly gunzTarPerm extractEntry examples/echo-server.js
+92 silly gunzTarPerm extractEntry examples/simple-test.js
+93 silly gunzTarPerm extractEntry examples/simple-time-server.js
+94 silly gunzTarPerm extractEntry lib/index.js
+95 silly gunzTarPerm extractEntry lib/proto.js
+96 silly gunzTarPerm extractEntry lib/utils.js
+97 silly gunzTarPerm extractEntry lib/middleware/echo.js
+98 silly gunzTarPerm extractEntry lib/middleware/errorHandler.js
+99 silly gunzTarPerm extractEntry lib/middleware/json.js
+100 silly gunzTarPerm extractEntry lib/middleware/profiler.js
+101 silly gunzTarPerm extractEntry nbproject/private/private.properties
+102 silly gunzTarPerm extractEntry nbproject/project.properties
+103 silly gunzTarPerm extractEntry nbproject/project.xml
+104 silly gunzTarPerm extractEntry scripts/lint
+105 silly lockFile 2b87352f-hipyard-npm-socket-0-0-1-package tar:///Users/shipyard/.npm/socket/0.0.1/package
+106 silly lockFile 2b87352f-hipyard-npm-socket-0-0-1-package tar:///Users/shipyard/.npm/socket/0.0.1/package
+107 silly lockFile 6c63e935-ard-npm-socket-0-0-1-package-tgz tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz
+108 silly lockFile 6c63e935-ard-npm-socket-0-0-1-package-tgz tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz
+109 verbose chmod /Users/shipyard/.npm/socket/0.0.1/package.tgz 644
+110 verbose chown /Users/shipyard/.npm/socket/0.0.1/package.tgz [ 501, 20 ]
+111 silly lockFile 22226b48-pmjs-org-socket-socket-0-0-1-tgz https://registry.npmjs.org/socket/-/socket-0.0.1.tgz
+112 silly lockFile 22226b48-pmjs-org-socket-socket-0-0-1-tgz https://registry.npmjs.org/socket/-/socket-0.0.1.tgz
+113 silly lockFile ccbb8590-socket-0-0-1 socket@0.0.1
+114 silly lockFile ccbb8590-socket-0-0-1 socket@0.0.1
+115 silly lockFile 45707214-socket socket@
+116 silly lockFile 45707214-socket socket@
+117 silly resolved [ { name: 'socket',
+117 silly resolved     description: 'Socket is a connect clone for simple socket based applications',
+117 silly resolved     version: '0.0.1',
+117 silly resolved     author:
+117 silly resolved      { name: 'Richard S Allinson',
+117 silly resolved        email: 'rsa@mounitainmansoftware.com' },
+117 silly resolved     main: 'index',
+117 silly resolved     engines: { node: '>= 0.6.0 < 0.7.0' },
+117 silly resolved     dependencies: { microtime: '=0.2.0' },
+117 silly resolved     repository: { type: 'git', url: 'https://github.com/capecodehq/socket.git' },
+117 silly resolved     license: 'MIT',
+117 silly resolved     bugs: { url: 'https://github.com/capecodehq/socket/issues' },
+117 silly resolved     readme: 'ERROR: No README data found!',
+117 silly resolved     homepage: 'https://github.com/capecodehq/socket',
+117 silly resolved     _id: 'socket@0.0.1',
+117 silly resolved     dist: { shasum: '1bec3cbd5dce37e1d328b57be9c344863eb7f7ee' },
+117 silly resolved     _from: 'socket@',
+117 silly resolved     _resolved: 'https://registry.npmjs.org/socket/-/socket-0.0.1.tgz' } ]
+118 info install socket@0.0.1 into /Users/shipyard/projects
+119 info installOne socket@0.0.1
+120 warn engine socket@0.0.1: wanted: {"node":">= 0.6.0 < 0.7.0"} (current: {"node":"v0.10.26","npm":"1.4.3"})
+121 info /Users/shipyard/projects/node_modules/socket unbuild
+122 verbose tar unpack /Users/shipyard/.npm/socket/0.0.1/package.tgz
+123 silly lockFile 8578d7d7-ard-projects-node-modules-socket tar:///Users/shipyard/projects/node_modules/socket
+124 verbose lock tar:///Users/shipyard/projects/node_modules/socket /Users/shipyard/.npm/8578d7d7-ard-projects-node-modules-socket.lock
+125 silly lockFile 6c63e935-ard-npm-socket-0-0-1-package-tgz tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz
+126 verbose lock tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz /Users/shipyard/.npm/6c63e935-ard-npm-socket-0-0-1-package-tgz.lock
+127 silly gunzTarPerm modes [ '755', '644' ]
+128 silly gunzTarPerm extractEntry package.json
+129 silly gunzTarPerm extractEntry index.js
+130 silly gunzTarPerm extractEntry examples/echo-server.js
+131 silly gunzTarPerm extractEntry examples/simple-test.js
+132 silly gunzTarPerm extractEntry examples/simple-time-server.js
+133 silly gunzTarPerm extractEntry lib/index.js
+134 silly gunzTarPerm extractEntry lib/proto.js
+135 silly gunzTarPerm extractEntry lib/utils.js
+136 silly gunzTarPerm extractEntry lib/middleware/echo.js
+137 silly gunzTarPerm extractEntry lib/middleware/errorHandler.js
+138 silly gunzTarPerm extractEntry lib/middleware/json.js
+139 silly gunzTarPerm extractEntry lib/middleware/profiler.js
+140 silly gunzTarPerm extractEntry nbproject/private/private.properties
+141 silly gunzTarPerm extractEntry nbproject/project.properties
+142 silly gunzTarPerm extractEntry nbproject/project.xml
+143 silly gunzTarPerm extractEntry scripts/lint
+144 silly lockFile 8578d7d7-ard-projects-node-modules-socket tar:///Users/shipyard/projects/node_modules/socket
+145 silly lockFile 8578d7d7-ard-projects-node-modules-socket tar:///Users/shipyard/projects/node_modules/socket
+146 silly lockFile 6c63e935-ard-npm-socket-0-0-1-package-tgz tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz
+147 silly lockFile 6c63e935-ard-npm-socket-0-0-1-package-tgz tar:///Users/shipyard/.npm/socket/0.0.1/package.tgz
+148 info preinstall socket@0.0.1
+149 verbose readDependencies using package.json deps
+150 verbose readDependencies using package.json deps
+151 verbose cache add [ 'microtime@=0.2.0', null ]
+152 verbose cache add name=undefined spec="microtime@=0.2.0" args=["microtime@=0.2.0",null]
+153 verbose parsed url { protocol: null,
+153 verbose parsed url   slashes: null,
+153 verbose parsed url   auth: null,
+153 verbose parsed url   host: null,
+153 verbose parsed url   port: null,
+153 verbose parsed url   hostname: null,
+153 verbose parsed url   hash: null,
+153 verbose parsed url   search: null,
+153 verbose parsed url   query: null,
+153 verbose parsed url   pathname: 'microtime@=0.2.0',
+153 verbose parsed url   path: 'microtime@=0.2.0',
+153 verbose parsed url   href: 'microtime@=0.2.0' }
+154 verbose cache add name="microtime" spec="=0.2.0" args=["microtime","=0.2.0"]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: '=0.2.0',
+155 verbose parsed url   path: '=0.2.0',
+155 verbose parsed url   href: '=0.2.0' }
+156 verbose addNamed [ 'microtime', '=0.2.0' ]
+157 verbose addNamed [ null, '=0.2.0' ]
+158 silly lockFile 2e0a3709-microtime-0-2-0 microtime@=0.2.0
+159 verbose lock microtime@=0.2.0 /Users/shipyard/.npm/2e0a3709-microtime-0-2-0.lock
+160 verbose url raw microtime/0.2.0
+161 verbose url resolving [ 'https://registry.npmjs.org/', './microtime/0.2.0' ]
+162 verbose url resolved https://registry.npmjs.org/microtime/0.2.0
+163 info trying registry request attempt 1 at 21:20:42
+164 http GET https://registry.npmjs.org/microtime/0.2.0
+165 http 200 https://registry.npmjs.org/microtime/0.2.0
+166 silly registry.get cb [ 200,
+166 silly registry.get   { date: 'Sat, 22 Mar 2014 01:20:41 GMT',
+166 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+166 silly registry.get     etag: '"7M0ZMAOMNHWFNVY315L7CQ3E4"',
+166 silly registry.get     'content-type': 'application/json',
+166 silly registry.get     via: '1.1 varnish',
+166 silly registry.get     'cache-control': 'max-age=1',
+166 silly registry.get     'content-length': '842',
+166 silly registry.get     'accept-ranges': 'bytes',
+166 silly registry.get     age: '0',
+166 silly registry.get     'x-served-by': 'cache-v41-ASH, cache-jfk1020-JFK',
+166 silly registry.get     'x-cache': 'MISS, MISS',
+166 silly registry.get     'x-cache-hits': '0, 0',
+166 silly registry.get     'x-timer': 'S1395451241.658093214,VS0,VS-523,VE-504,VE27',
+166 silly registry.get     vary: 'Accept',
+166 silly registry.get     'keep-alive': 'timeout=10, max=50',
+166 silly registry.get     connection: 'Keep-Alive' } ]
+167 silly lockFile 1672971e-rg-microtime-microtime-0-2-0-tgz https://registry.npmjs.org/microtime/-/microtime-0.2.0.tgz
+168 verbose lock https://registry.npmjs.org/microtime/-/microtime-0.2.0.tgz /Users/shipyard/.npm/1672971e-rg-microtime-microtime-0-2-0-tgz.lock
+169 verbose addRemoteTarball [ 'https://registry.npmjs.org/microtime/-/microtime-0.2.0.tgz',
+169 verbose addRemoteTarball   '45ee5cb061f9948a3ade221e620d5117a8a2bdb4' ]
+170 info retry fetch attempt 1 at 21:20:42
+171 verbose fetch to= /var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/tmp.tgz
+172 http GET https://registry.npmjs.org/microtime/-/microtime-0.2.0.tgz
+173 http 200 https://registry.npmjs.org/microtime/-/microtime-0.2.0.tgz
+174 verbose tar unpack /var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/tmp.tgz
+175 silly lockFile b3d88979-42476-0-4229093089234084-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/package
+176 verbose lock tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/package /Users/shipyard/.npm/b3d88979-42476-0-4229093089234084-package.lock
+177 silly lockFile 80f78c66-42476-0-4229093089234084-tmp-tgz tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/tmp.tgz
+178 verbose lock tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/tmp.tgz /Users/shipyard/.npm/80f78c66-42476-0-4229093089234084-tmp-tgz.lock
+179 silly gunzTarPerm modes [ '755', '644' ]
+180 silly gunzTarPerm extractEntry index.js
+181 silly gunzTarPerm extractEntry LICENSE
+182 silly gunzTarPerm extractEntry package.json
+183 silly gunzTarPerm extractEntry README.md
+184 silly gunzTarPerm extractEntry test.js
+185 silly gunzTarPerm extractEntry wscript
+186 silly gunzTarPerm extractEntry src/microtime.cc
+187 silly lockFile b3d88979-42476-0-4229093089234084-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/package
+188 silly lockFile b3d88979-42476-0-4229093089234084-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/package
+189 silly lockFile 80f78c66-42476-0-4229093089234084-tmp-tgz tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/tmp.tgz
+190 silly lockFile 80f78c66-42476-0-4229093089234084-tmp-tgz tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/tmp.tgz
+191 verbose tar pack [ '/Users/shipyard/.npm/microtime/0.2.0/package.tgz',
+191 verbose tar pack   '/var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/package' ]
+192 verbose tarball /Users/shipyard/.npm/microtime/0.2.0/package.tgz
+193 verbose folder /var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/package
+194 silly lockFile b3d88979-42476-0-4229093089234084-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/package
+195 verbose lock tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/package /Users/shipyard/.npm/b3d88979-42476-0-4229093089234084-package.lock
+196 silly lockFile 912b2415--npm-microtime-0-2-0-package-tgz tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz
+197 verbose lock tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz /Users/shipyard/.npm/912b2415--npm-microtime-0-2-0-package-tgz.lock
+198 silly lockFile b3d88979-42476-0-4229093089234084-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/package
+199 silly lockFile b3d88979-42476-0-4229093089234084-package tar:///var/folders/6g/ytzr7__x641ch39qpqnw19vm0000gn/T/npm-17333-rQcqC-pR/1395451242476-0.4229093089234084/package
+200 silly lockFile 912b2415--npm-microtime-0-2-0-package-tgz tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz
+201 silly lockFile 912b2415--npm-microtime-0-2-0-package-tgz tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz
+202 silly lockFile dfc03e25-yard-npm-microtime-0-2-0-package /Users/shipyard/.npm/microtime/0.2.0/package
+203 verbose lock /Users/shipyard/.npm/microtime/0.2.0/package /Users/shipyard/.npm/dfc03e25-yard-npm-microtime-0-2-0-package.lock
+204 silly lockFile dfc03e25-yard-npm-microtime-0-2-0-package /Users/shipyard/.npm/microtime/0.2.0/package
+205 silly lockFile dfc03e25-yard-npm-microtime-0-2-0-package /Users/shipyard/.npm/microtime/0.2.0/package
+206 verbose tar unpack /Users/shipyard/.npm/microtime/0.2.0/package.tgz
+207 silly lockFile befecb23-yard-npm-microtime-0-2-0-package tar:///Users/shipyard/.npm/microtime/0.2.0/package
+208 verbose lock tar:///Users/shipyard/.npm/microtime/0.2.0/package /Users/shipyard/.npm/befecb23-yard-npm-microtime-0-2-0-package.lock
+209 silly lockFile 912b2415--npm-microtime-0-2-0-package-tgz tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz
+210 verbose lock tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz /Users/shipyard/.npm/912b2415--npm-microtime-0-2-0-package-tgz.lock
+211 silly gunzTarPerm modes [ '755', '644' ]
+212 silly gunzTarPerm extractEntry package.json
+213 silly gunzTarPerm extractEntry README.md
+214 silly gunzTarPerm extractEntry LICENSE
+215 silly gunzTarPerm extractEntry index.js
+216 silly gunzTarPerm extractEntry test.js
+217 silly gunzTarPerm extractEntry src/microtime.cc
+218 silly gunzTarPerm extractEntry wscript
+219 silly lockFile befecb23-yard-npm-microtime-0-2-0-package tar:///Users/shipyard/.npm/microtime/0.2.0/package
+220 silly lockFile befecb23-yard-npm-microtime-0-2-0-package tar:///Users/shipyard/.npm/microtime/0.2.0/package
+221 silly lockFile 912b2415--npm-microtime-0-2-0-package-tgz tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz
+222 silly lockFile 912b2415--npm-microtime-0-2-0-package-tgz tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz
+223 verbose chmod /Users/shipyard/.npm/microtime/0.2.0/package.tgz 644
+224 verbose chown /Users/shipyard/.npm/microtime/0.2.0/package.tgz [ 501, 20 ]
+225 silly lockFile 1672971e-rg-microtime-microtime-0-2-0-tgz https://registry.npmjs.org/microtime/-/microtime-0.2.0.tgz
+226 silly lockFile 1672971e-rg-microtime-microtime-0-2-0-tgz https://registry.npmjs.org/microtime/-/microtime-0.2.0.tgz
+227 silly lockFile 2e0a3709-microtime-0-2-0 microtime@=0.2.0
+228 silly lockFile 2e0a3709-microtime-0-2-0 microtime@=0.2.0
+229 silly resolved [ { name: 'microtime',
+229 silly resolved     version: '0.2.0',
+229 silly resolved     description: 'Get the current time in microseconds',
+229 silly resolved     author:
+229 silly resolved      { name: 'Wade Simmons',
+229 silly resolved        email: 'wade@wades.im',
+229 silly resolved        url: 'http://wades.im/mons' },
+229 silly resolved     homepage: 'https://github.com/wadey/node-microtime',
+229 silly resolved     repository:
+229 silly resolved      { type: 'git',
+229 silly resolved        url: 'git://github.com/wadey/node-microtime.git' },
+229 silly resolved     main: './index',
+229 silly resolved     engines: { node: '>= 0.2.0' },
+229 silly resolved     scripts: { install: 'node-waf configure build', test: 'node test.js' },
+229 silly resolved     readme: '# node-microtime\n\nDate.now() will only give you accuracy in milliseconds. This module calls\n`gettimeofday(2)` to get the time in microseconds and provides it in a few\ndifferent formats. The same warning from that function applies:\n_The resolution of the system clock is hardware dependent, and the time may\nbe updated continuously or in ``ticks.\'\'_\n\n# Installation\n\n    npm install microtime\n\n# Usage\n\n### microtime.now()\n\nGet the current time in microseconds as an integer. Since JavaScript can only\nrepresent integer values accurately up to `Math.pow(2, 53)`, this value will\nbe accurate up to _Tue, 05 Jun 2255 23:47:34 GMT_.\n\n### microtime.nowDouble()\n\nGet the current time in seconds as a floating point number with microsecond\naccuracy (similar to `time.time()` in Python and `Time.now.to_f` in Ruby).\n\n### microtime.nowStruct()\n\nGet the current time and return as a list with seconds and microseconds (matching the return value of `gettimeofday(2)`).\n\n# Example\n\n    > var microtime = require(\'microtime\')\n    > microtime.now()\n    1297448895297028\n    > microtime.nowDouble()\n    1297448897.600976\n    > microtime.nowStruct()\n    [ 1297448902, 753875 ]\n\n## Estimating clock resolution\n\nStarting with version 0.1.3, there is a test script that tries to guess the clock resolution. You can run it with `npm test microtime`. Example output:\n\n    microtime.now() = 1298960083489806\n    microtime.nowDouble() = 1298960083.511521\n    microtime.nowStruct() = [ 1298960083, 511587 ]\n\n    Guessing clock resolution...\n    Clock resolution observed: 1us\n\n## Tested on\n\n    Node.js 0.2.6\n      - OS X 10.6.6\n      - Ubuntu 10.04\n\n    Node.js 0.4.1\n      - OS X 10.6.6\n      - Windows 7 64bit (Cygwin) *\n\n## Warning for Cygwin users\n\nIt appears that Cygwin only implements `gettimeofday(2)` with [millisecond accuracy](http://old.nabble.com/gettimeofday---millisecond-accuracy-p21085475.html).\n',
+229 silly resolved     readmeFilename: 'README.md',
+229 silly resolved     bugs: { url: 'https://github.com/wadey/node-microtime/issues' },
+229 silly resolved     _id: 'microtime@0.2.0',
+229 silly resolved     dist: { shasum: '8a46cdd14aa1ecbbcedfc78a95a00fb2a7565fa1' },
+229 silly resolved     _from: 'microtime@=0.2.0',
+229 silly resolved     _resolved: 'https://registry.npmjs.org/microtime/-/microtime-0.2.0.tgz' } ]
+230 info install microtime@0.2.0 into /Users/shipyard/projects/node_modules/socket
+231 info installOne microtime@0.2.0
+232 info /Users/shipyard/projects/node_modules/socket/node_modules/microtime unbuild
+233 verbose tar unpack /Users/shipyard/.npm/microtime/0.2.0/package.tgz
+234 silly lockFile 76210da6-es-socket-node-modules-microtime tar:///Users/shipyard/projects/node_modules/socket/node_modules/microtime
+235 verbose lock tar:///Users/shipyard/projects/node_modules/socket/node_modules/microtime /Users/shipyard/.npm/76210da6-es-socket-node-modules-microtime.lock
+236 silly lockFile 912b2415--npm-microtime-0-2-0-package-tgz tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz
+237 verbose lock tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz /Users/shipyard/.npm/912b2415--npm-microtime-0-2-0-package-tgz.lock
+238 silly gunzTarPerm modes [ '755', '644' ]
+239 silly gunzTarPerm extractEntry package.json
+240 silly gunzTarPerm extractEntry README.md
+241 silly gunzTarPerm extractEntry LICENSE
+242 silly gunzTarPerm extractEntry index.js
+243 silly gunzTarPerm extractEntry test.js
+244 silly gunzTarPerm extractEntry src/microtime.cc
+245 silly gunzTarPerm extractEntry wscript
+246 silly lockFile 76210da6-es-socket-node-modules-microtime tar:///Users/shipyard/projects/node_modules/socket/node_modules/microtime
+247 silly lockFile 76210da6-es-socket-node-modules-microtime tar:///Users/shipyard/projects/node_modules/socket/node_modules/microtime
+248 silly lockFile 912b2415--npm-microtime-0-2-0-package-tgz tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz
+249 silly lockFile 912b2415--npm-microtime-0-2-0-package-tgz tar:///Users/shipyard/.npm/microtime/0.2.0/package.tgz
+250 info preinstall microtime@0.2.0
+251 verbose readDependencies using package.json deps
+252 verbose readDependencies using package.json deps
+253 silly resolved []
+254 verbose about to build /Users/shipyard/projects/node_modules/socket/node_modules/microtime
+255 info build /Users/shipyard/projects/node_modules/socket/node_modules/microtime
+256 verbose linkStuff [ false,
+256 verbose linkStuff   false,
+256 verbose linkStuff   false,
+256 verbose linkStuff   '/Users/shipyard/projects/node_modules/socket/node_modules' ]
+257 info linkStuff microtime@0.2.0
+258 verbose linkBins microtime@0.2.0
+259 verbose linkMans microtime@0.2.0
+260 verbose rebuildBundles microtime@0.2.0
+261 info install microtime@0.2.0
+262 verbose unsafe-perm in lifecycle true
+263 info microtime@0.2.0 Failed to exec install script
+264 info /Users/shipyard/projects/node_modules/socket/node_modules/microtime unbuild
+265 info preuninstall microtime@0.2.0
+266 info uninstall microtime@0.2.0
+267 verbose false,/Users/shipyard/projects/node_modules,/Users/shipyard/projects/node_modules/socket/node_modules unbuild microtime@0.2.0
+268 info postuninstall microtime@0.2.0
+269 verbose about to build /Users/shipyard/projects/node_modules/socket
+270 info /Users/shipyard/projects/node_modules/socket unbuild
+271 info preuninstall socket@0.0.1
+272 info uninstall socket@0.0.1
+273 verbose true,/Users/shipyard/projects/node_modules,/Users/shipyard/projects/node_modules unbuild socket@0.0.1
+274 info postuninstall socket@0.0.1
+275 error microtime@0.2.0 install: `node-waf configure build`
+275 error Exit status 127
+276 error Failed at the microtime@0.2.0 install script.
+276 error This is most likely a problem with the microtime package,
+276 error not with npm itself.
+276 error Tell the author that this fails on your system:
+276 error     node-waf configure build
+276 error You can get their info via:
+276 error     npm owner ls microtime
+276 error There is likely additional logging output above.
+277 error System Darwin 13.1.0
+278 error command "/usr/local/Cellar/node/0.10.26/bin/node" "/usr/local/bin/npm" "install" "socket"
+279 error cwd /Users/shipyard/projects/battlechat
+280 error node -v v0.10.26
+281 error npm -v 1.4.3
+282 error code ELIFECYCLE
+283 verbose exit [ 1, true ]
