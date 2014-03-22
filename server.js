@@ -1,6 +1,5 @@
 //  Customization
 
-var appPort = 16558;
 
 // Librairies
 
@@ -30,9 +29,7 @@ app.configure(function() {
 app.get('/', function(req, res){
   res.render('index.jade');
 });
-server.listen(appPort);
-// app.listen(appPort);
-console.log("Server listening on port 16558");
+server.listen(port);
 
 // Handle the socket.io connections
 
