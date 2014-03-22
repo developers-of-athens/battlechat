@@ -27,7 +27,7 @@ app.configure(function() {
 // Render and send the main page
 
 app.get('/', function(req, res){
-  res.render('home.jade');
+  res.render('index.jade');
 });
 server.listen(appPort);
 // app.listen(appPort);
