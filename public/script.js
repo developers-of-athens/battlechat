@@ -21,7 +21,8 @@ l||(a.returnValue=!1)}};(function(){window.addEventListener?(this.addEventListen
 
 
 var messageContainer, submitButton;
-var pseudo = "";
+var pseudo = "",
+    title = "";
 
 // Init
 $(function() {
@@ -67,6 +68,7 @@ function sentMessage() {
     }
   }
 }
+
 function addMessage(msg, pseudo, date, self) {
   if(self) var classDiv = "row message self";
   else var classDiv = "row message";
@@ -81,6 +83,7 @@ function bindButton() {
     else submitButton.button('reset');
   });
 }
+
 function setPseudo() {
   if ($("#pseudoInput").val() != "")
   {
@@ -98,7 +101,25 @@ function setPseudo() {
       }
     })
   }
+  if ($("#titleInput").val() != "")
+    console.log($("#titleInput").val());
+  {
+    socket.emit('setTitle', $('#titleInput').val());
+    socket.on('titleStatus', function(data){
+      if(data == "ok")
+      {
+        $('#modalTitle').modal('hide');
+        $('#alertTitle').hide();
+        title = $('#titleInput').val();
+      }
+      else
+      {
+        $('#alertTitle').slideDown();
+      }
+    })
+  }
 }
+
 function time() {
   $("time").each(function(){
     $(this).text($.timeago($(this).attr('title')));

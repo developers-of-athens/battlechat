@@ -12,7 +12,7 @@ html
             div.navbar.navbar-fixed-top
                 div.navbar-inner
                     div.container
-                        a.brand(href="#") A REAL CHATROOM FOR REAL GANGSTAS
+                        a.brand#title(href="#") A REAL CHATROOM FOR REAL GANGSTAS
             div#chatEntries
             div.row#entries
                 input(type='text')#messageInput
@@ -33,6 +33,10 @@ html
         div.modal-header
             h3 Choose a name
         div.modal-body
+            p Choose a title :
+            input(type='text')#titleInput
+            div.alert.alert-error#alertTitle
+                | This title is already used ! Choose another one.
             p Choose a name :
             input(type='text')#pseudoInput
             div.alert.alert-error#alertPseudo

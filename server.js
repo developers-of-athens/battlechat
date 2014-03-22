@@ -13,6 +13,7 @@ var http = require('http')
 var jade = require('jade');
 // var io = require('socket.io').listen(app);
 var pseudoArray = ['admin']; //block the admin username (you can disable it)
+var titleArray = ['Anything'];
 
 // Views Options
 
@@ -62,6 +63,9 @@ io.sockets.on('connection', function (socket) { // First connection
       socket.emit('pseudoStatus', 'error') // Send the error
     }
   });
+  socket.on('setTitle', function (data) {
+    if 
+  }
   socket.on('disconnect', function () { // Disconnection of the client
     users -= 1;
     reloadUsers();
@@ -80,6 +84,7 @@ io.sockets.on('connection', function (socket) { // First connection
 function reloadUsers() { // Send the count of the users to all
   io.sockets.emit('nbUsers', {"nb": users});
 }
+
 function pseudoSet(socket) { // Test if the user has a name
   var test;
   socket.get('pseudo', function(err, name) {
@@ -88,6 +93,16 @@ function pseudoSet(socket) { // Test if the user has a name
   });
   return test;
 }
+
+function titleSet(socket) { // Set title for chat room
+  var test;
+  socket.get('title', function(err, title) {
+    if (title == null ) test = false;
+    else test = true;
+  });
+  return test;
+}
+
 function returnPseudo(socket) { // Return the name of the user
   var pseudo;
   socket.get('pseudo', function(err, name) {
@@ -95,4 +110,13 @@ function returnPseudo(socket) { // Return the name of the user
     else pseudo = name;
   });
   return pseudo;
+}
+
+function returnTitle(socket) { // Return title of room
+  var title;
+  socket.get('title', function(err, name) {
+    if ( name == null ) title = false;
+    else title = name;
+  });
+  return title;
 }
